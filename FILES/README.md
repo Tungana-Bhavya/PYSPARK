@@ -166,3 +166,12 @@ df.replace('old_value', 'new_value', subset =['column_name'])
 
 #### - How to replace existing value in multiple columns ?
 df.replace({'column_1':{'old_value':'new_value'},</br>{'column_2' : {'old_value':'new_value'}})
+
+#### - How to apply conditional logic on data ?
+df.withColumn('new_column_name', when((col('column_name_1') > condition </br>|(col('column_name_2'),"value_if_true").otherwise("value_if_not_true"))
+
+#### - How to apply multiple conditional logic ?
+df.withColumn('new_column_name', </br>
+when(col('column_name') < condition, 'value_if_true')</br>
+.when(col('column_name') == condition, 'value_if_true')</br>
+.otherwise('value_if_not_true'))
