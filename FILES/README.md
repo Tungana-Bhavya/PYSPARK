@@ -141,27 +141,27 @@ df.dropDuplicates()
 
 ### Handling Missing Values
 #### - How to drop rows were all values are null ?
-df.na.drop(how = 'all').show()
-or
+df.na.drop(how = 'all').show()</br>
+or</br>
 df.dropna(how ='all').show()
 #### - How to drop rows were any value is null ?
-df.na.drop(how = 'any').show()
-or
+df.na.drop(how = 'any').show()</br>
+or</br>
 df.dropna(how = 'any').show()
 
 #### - How to fill missing value ?
-df.na.fill("value").show()
-or
+df.na.fill("value").show()</br>
+or</br>
 df.fillna("value").show()
 
 #### - How to fill with specific value in specific column ?
-df.na.fill({"col_name":"value", "col_name":"value"}).show()
-or
+df.na.fill({"col_name":"value", "col_name":"value"}).show()</br>
+or</br>
 df.fillna({"col_name":"value", "col_name":"value"}).show()
 
 #### - How to replace existing value ?
-df.na.replace(['old_value'],['new_value'])
-or
+df.na.replace(['old_value'],['new_value'])</br>
+or</br>
 df.replace('old_value', 'new_value', subset =['column_name'])
 
 #### - How to replace existing value in multiple columns ?
