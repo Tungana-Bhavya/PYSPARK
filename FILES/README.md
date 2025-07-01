@@ -130,8 +130,18 @@ df = df.withColumn("new_column_name", df['column'] + 15)   # calculating new_col
 df.limit(value)  # df.limit(10)
 
 ### Data Manipulation
-#### - How to rename new columns ?
+#### - How to rename old column ?
 df.withColumnRenamed('old_name', 'new_name')
+
+#### - How to rename multiple old columns ?
+col_map = {</br>
+'old_name_1' : 'new_name_1',</br>
+'old_name_2' : 'new_name_2',</br>
+'old_name_3' : 'new_name_3'</br>
+}</br>
+
+for old_name, new_name in col_map.items():</br>
+df = df.withColumnRenamed(old_name, new_name)
 
 #### - How to give alias name to the column ?
 df.select(col('column').alias('column_alias'))
