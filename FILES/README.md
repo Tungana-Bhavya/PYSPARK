@@ -150,6 +150,12 @@ df.select(col('column').alias('column_alias'))
 df.dropDuplicates()
 
 ### Handling Missing Values
+#### - How to drop column ?
+df.drop['column_name'].display()
+
+#### - How to drop multiple ?
+df.drop('column_name_1', 'column_name_2').display()
+
 #### - How to drop rows were all values are null ?
 df.na.drop(how = 'all').show()</br>
 or</br>
@@ -185,3 +191,47 @@ df.withColumn('new_column_name', </br>
 when(col('column_name') < condition, 'value_if_true')</br>
 .when(col('column_name') == condition, 'value_if_true')</br>
 .otherwise('value_if_not_true'))
+
+#### - How to get unique records from dataframe ?
+df.distinct.display()
+
+#### - How to apply union function to the dataframe ?
+- Requires the dataframes to have the same schema(i.e same names and data types) and the same column order. By using union missing column cannot be filled with null values.</br>
+
+df1.union(df2)
+
+#### - How to apply unionByName function to the dataframe ?
+- Requires the dataframes to have the same column names and data types, but the column order cna be different. It combines dataframes based on the column names.</br>
+
+df1.unionByName(df2, allowMissingColumns=True)
+
+### Functions
+#### Date Functions
+#### - How to get the current date column ?
+df.withColumn('cur_date', current_date()).display()
+
+#### - How to add specific number of days to the date column ?
+df.withColumn('new_future_date', date_add('date_column', num_days)).display()
+
+#### - How to subtract specific number of days to the date column ?
+df.withColumn('new_past_date', date_sub('date_column', num_days)).display()
+
+#### - How to apply datediff() function ?
+df.withColumn('date_diff_column', datediff('end_date','start_date')).display()
+
+#### - How to format date column ?
+df.withColumn('my_formatted_date', date_format('date_column', 'format_string')).display()</br>
+<b>--- format strings:</b></br>
+yyyy : 4 digit year</br>
+MM : 2 digit month</br>
+dd : 2 digit day</br>
+MMM : 3-letter month</br>
+EEEE : weekday full_name
+
+#### - How to split a specific column ?
+df.withColumn('new_column_name', split('column_name', delimeter)).display()
+
+#### - How to apply indexing to a specific column ?
+--- indexing can be applied after conversion of data to list</br>
+df.withColumn('new_column_name', split('column_name', delimeter)[index]).display()
+
