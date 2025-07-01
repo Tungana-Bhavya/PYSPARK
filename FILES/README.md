@@ -29,7 +29,7 @@ df = spark.read.json('filepath', inferSchema = True, header = True)
 #### - How to read Parquet file ?
 df = spark.read.parquet('filepath', inferSchema = True, header = True)
 
-#### - How to read Database file ? </br>
+#### - How to read Database file ?
 df = spark.read \
           .format("jdbc")\ </br>
           .option("url", "jdbc_url")\ </br>
@@ -38,7 +38,48 @@ df = spark.read \
           .option("password","password")\ </br>
           .load() </br>
 
+#### - How to read csv file using format ?
+df = spark.read.format("csv").option('inferSchema', True).option('header', True).load("path_to_file.csv") </br>
+
 ### Data Transformation
+#### - How to change type of data ?
+
+<b>method 1:Using Cast() function</b></br>
+from pyspark.sql.types import StringType, IntegerType, LongType, FloatType, DoubleType, BooleanType, TimestampType, DateType</br>
+
+To string:
+df = df.withColumn("column_name", col("column_name").cast("string"))</br>
+
+To integer:
+df = df.withColumn("column_name", col("column_name").cast("integer"))</br>
+
+To long:
+df = df.withColumn("column_name", col("column_name").cast("long"))</br>
+
+To float:
+df = df.withColumn("column_name", col("column_name").cast("float"))</br>
+
+To double:
+df = df.withColumn("column_name", col("column_name").cast("double"))</br>
+
+To boolean:
+df = df.withColumn("column_name", col("column_name").cast("boolean"))</br>
+
+To timestamp:
+df = df.withColumn("column_name", col("column_name").cast("timestamp"))</br>
+
+To date:
+df = df.withColumn("column_name", col("column_name").cast("date"))</br>
+
+<b>method 2: Using StructType()</b></br>
+
+from pyspark.sql.types import *</br>
+from pyspark.sql.functions import * </br>
+schema = StructType([</br>
+StructField('column1', datatype(),True),
+StructField('column2', datatype(), True)</br>
+])
+
 #### - How to select columns from dataset ?
 <b>method 1:</b></br>
 df.select('col1', 'col2') </br>
@@ -81,7 +122,8 @@ df.groupBy("column_name").agg({'column_2':'sum'})
 
 #### - How to add new columns to the data ?
  - Concat function for string concatenation and col for referncing existing columns.</br>
-df = df.withColumn("new_column_name", concat(col("column1"), lit(""), col("column2")))
+df = df.withColumn("new_column_name", concat(col("column1"), lit(""), col("column2")))</br>
+
 df = df.withColumn("new_column_name", df['column'] + 15)   # calculating new_column_name from existing column by adding 15 
 
 #### - How to apply limit function to the data ?
@@ -97,8 +139,30 @@ df.select(col('column').alias('column_alias'))
 #### - How to remove duplicates from data ?
 df.dropDuplicates()
 
+### Handling Missing Values
+#### - How to drop rows were all values are null ?
+df.na.drop(how = 'all').show()
+or
+df.dropna(how ='all').show()
+#### - How to drop rows were any value is null ?
+df.na.drop(how = 'any').show()
+or
+df.dropna(how = 'any').show()
 
+#### - How to fill missing value ?
+df.na.fill("value").show()
+or
+df.fillna("value").show()
 
+#### - How to fill with specific value in specific column ?
+df.na.fill({"col_name":"value", "col_name":"value"}).show()
+or
+df.fillna({"col_name":"value", "col_name":"value"}).show()
 
+#### - How to replace existing value ?
+df.na.replace(['old_value'],['new_value'])
+or
+df.replace('old_value', 'new_value', subset =['column_name'])
 
-
+#### - How to replace existing value in multiple columns ?
+df.replace({'column_1':{'old_value':'new_value'},</br>{'column_2' : {'old_value':'new_value'}})
