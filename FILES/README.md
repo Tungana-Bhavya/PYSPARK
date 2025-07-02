@@ -245,6 +245,12 @@ df.select(lower('column_name').alias('lowercase_column'))
 #### - How to remove leading trailing spaces from string ?
 df.select(trim('column_name').alias('trimmed_column'))
 
+#### - How to remove leading whitespaces from a string ?
+df.select(ltrim('column_name').alias('ltrimmed_column'))
+
+#### - How to remove trailing whitespaces from a string ?
+df.select(rtrim('column_name').alias(rtrimmed_column'))
+
 #### - How to return length of string ?
 df.select(length('column_name').alias('length_column'))
 
@@ -257,4 +263,6 @@ df.select(concat_ws('column_1','column_2').alias('concatenated_column_with_space
 #### - How to capitalize the first letter of string ?
 df.select(initcap('column_name').alias('initcap_column'))
 
-#### - 
+#### - How to split a string into an array of substrings ?
+df.select(split('column_name',',').alias('split_column'))
+
