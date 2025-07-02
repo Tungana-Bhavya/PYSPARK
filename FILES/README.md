@@ -235,3 +235,26 @@ df.withColumn('new_column_name', split('column_name', delimeter)).display()
 --- indexing can be applied after conversion of data to list</br>
 df.withColumn('new_column_name', split('column_name', delimeter)[index]).display()
 
+#### String Functions
+#### - How to convert string to uppercase ?
+df.select(upper('column_name').alias('uppercase_column'))
+
+#### - How to convert string to lowercase ?
+df.select(lower('column_name').alias('lowercase_column'))
+
+#### - How to remove leading trailing spaces from string ?
+df.select(trim('column_name').alias('trimmed_column'))
+
+#### - How to return length of string ?
+df.select(length('column_name').alias('length_column'))
+
+#### - How to concat two strings ?
+df.select(concat('column_1','column_2').alias('concatenated_column'))
+
+#### - How to concat two strings including space ?
+df.select(concat_ws('column_1','column_2').alias('concatenated_column_with_space'))
+
+#### - How to capitalize the first letter of string ?
+df.select(initcap('column_name').alias('initcap_column'))
+
+#### - 
