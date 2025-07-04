@@ -3,7 +3,7 @@
 ------
 
 1. Pyspark CheatSheet
-2. Pyspark StrataScratch Solutions
+2. Pyspark Problems
 3. Pyspark Project
 
 
@@ -13,7 +13,7 @@
 [Pyspark CheatSheet](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/README.md)
 
 -------
-
+Below are my soluntions to the Pyspark Problems....
 #### StrataScratch 
 
 |ID| QUESTION                |IMAGE|
