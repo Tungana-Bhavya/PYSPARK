@@ -99,6 +99,26 @@ df.filter(col('column')==value) & (col('column2')< value)
 <b>case 3:</b></br>
 df.filter((col('column').isNull()) & (col('column').isin('val1', 'val2')))
 
+#### - How to apply joins on dataframes ?
+inner join:</br>
+joined_df = df1.join(df2, "key", "inner")</br>
+or</br>
+joined_df = df1.join(df2, col("df_key") == col("df2_key"), "inner") </br>
+
+outer join:</br>
+joined_df = df1.join(df2, "key", outer)</br>
+or</br>
+joined_df = df1.join(df2, col("df_key")==col("df2_key"), "outer")</br>
+
+left join:</br>
+joined_df = df1.join(df2, "key", "left")</br>
+or </br>
+joined_df = df1.join(df2, col("df_key")==col("df2_key"), "left")
+
+right join:</br>
+joined_df = df1.join(df2, col("df_key")==col("df2_key"), "right")</br>
+joined_df = df1.join(df2, "key", "right")</br>
+
 #### - How to sort data in ascending order ?
 <b>By using sort():</b></br>
 df = df.sort("column_name")</br>
@@ -194,6 +214,16 @@ when(col('column_name') < condition, 'value_if_true')</br>
 
 #### - How to get unique records from dataframe ?
 df.distinct.display()
+
+#### - When to use countDistinct() function ?
+scenario 1: with Select statement </br>
+df = df.select(countDistinct("column_name").alias("new_distinct_column_name"))</br>
+
+scenario 2: with aggregate function</br>
+df = df.agg(countDistinct("column_name").alias("distinct_count"))</br>
+
+scenario 3: with groupby and aggregate </br>
+df = df.groupBy("group_column_name").agg(countDistinct("column_name").alias("distinct_column"))
 
 #### - How to apply union function to the dataframe ?
 - Requires the dataframes to have the same schema(i.e same names and data types) and the same column order. By using union missing column cannot be filled with null values.</br>
