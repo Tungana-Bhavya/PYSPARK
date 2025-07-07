@@ -1,4 +1,4 @@
-### Setting Environment for SparkSession
+## Setting Environment for SparkSession
 #### - How to Install PySpark Session ?
 pip install pyspark
 
@@ -6,7 +6,7 @@ pip install pyspark
 from pyspark.sql import SparkSession; <br>
 spark = SparkSession.builder.appName('Sample').getOrCreate()
 
-### DataFrames
+## DataFrames
 #### - How to create dataframe ?
 df = spark.createDataFrame(data,schema)
 
@@ -19,7 +19,7 @@ df.display()
 #### - How to print schema ?
 df.printSchema()
 
-### Data Extraction
+## Data Extraction
 #### - How to read csv file ?
 df = spark.read.csv('filepath', inferSchema = True, header = True)
 
@@ -41,7 +41,8 @@ df = spark.read \
 #### - How to read csv file using format ?
 df = spark.read.format("csv").option('inferSchema', True).option('header', True).load("path_to_file.csv") </br>
 
-### Data Transformation
+## Data Transformation
+### Data Types Conversion
 #### - How to change type of data ?
 
 <b>method 1:Using Cast() function</b></br>
@@ -80,6 +81,7 @@ StructField('column1', datatype(),True),
 StructField('column2', datatype(), True)</br>
 ])
 
+### Selection
 #### - How to select columns from dataset ?
 <b>method 1:</b></br>
 df.select('col1', 'col2') </br>
@@ -87,6 +89,7 @@ df.select('col1', 'col2') </br>
 <b>method 2:</b></br>
 df.select(col('column1'), col('column2'))</br>
 
+### Filtering
 #### - How to filter data from dataset ?
 <b>case 1:</b></br>
 df.filter(df['column'] == value)
@@ -99,6 +102,7 @@ df.filter(col('column')==value) & (col('column2')< value)
 <b>case 3:</b></br>
 df.filter((col('column').isNull()) & (col('column').isin('val1', 'val2')))
 
+### Joining
 #### - How to apply joins on dataframes ?
 inner join:</br>
 joined_df = df1.join(df2, "key", "inner")</br>
@@ -119,6 +123,7 @@ right join:</br>
 joined_df = df1.join(df2, col("df_key")==col("df2_key"), "right")</br>
 joined_df = df1.join(df2, "key", "right")</br>
 
+### Sorting
 #### - How to sort data in ascending order ?
 <b>By using sort():</b></br>
 df = df.sort("column_name")</br>
@@ -149,7 +154,8 @@ df = df.withColumn("new_column_name", df['column'] + 15)   # calculating new_col
 #### - How to apply limit function to the data ?
 df.limit(value)  # df.limit(10)
 
-### Data Manipulation
+## Data Manipulation
+### Renaming
 #### - How to rename old column ?
 df.withColumnRenamed('old_name', 'new_name')
 
@@ -170,6 +176,7 @@ df.select(col('column').alias('column_alias'))
 df.dropDuplicates()
 
 ### Handling Missing Values
+### Droping
 #### - How to drop column ?
 df.drop['column_name'].display()
 
@@ -185,6 +192,7 @@ df.na.drop(how = 'any').show()</br>
 or</br>
 df.dropna(how = 'any').show()
 
+### Filling
 #### - How to fill missing value ?
 df.na.fill("value").show()</br>
 or</br>
@@ -195,6 +203,7 @@ df.na.fill({"col_name":"value", "col_name":"value"}).show()</br>
 or</br>
 df.fillna({"col_name":"value", "col_name":"value"}).show()
 
+### Replacing
 #### - How to replace existing value ?
 df.na.replace(['old_value'],['new_value'])</br>
 or</br>
@@ -203,6 +212,7 @@ df.replace('old_value', 'new_value', subset =['column_name'])
 #### - How to replace existing value in multiple columns ?
 df.replace({'column_1':{'old_value':'new_value'},</br>{'column_2' : {'old_value':'new_value'}})
 
+### Conditional Statements
 #### - How to apply conditional logic on data ?
 df.withColumn('new_column_name', when((col('column_name_1') > condition </br>|(col('column_name_2'),"value_if_true").otherwise("value_if_not_true"))
 
@@ -235,8 +245,8 @@ df1.union(df2)
 
 df1.unionByName(df2, allowMissingColumns=True)
 
-### Functions
-#### Date Functions
+## Functions
+### Date Functions
 #### - How to get the current date column ?
 df.withColumn('cur_date', current_date()).display()
 
@@ -265,7 +275,7 @@ df.withColumn('new_column_name', split('column_name', delimeter)).display()
 --- indexing can be applied after conversion of data to list</br>
 df.withColumn('new_column_name', split('column_name', delimeter)[index]).display()
 
-#### String Functions
+### String Functions
 #### - How to convert string to uppercase ?
 df.select(upper('column_name').alias('uppercase_column'))
 
