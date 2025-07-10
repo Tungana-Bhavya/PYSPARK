@@ -37,3 +37,4 @@ Below are my soluntions to the Pyspark Problems....
 |17|[Lyft Driver Wages](https://platform.stratascratch.com/coding/10003-lyft-driver-wages?code_type=6)|Easy|[Output](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/STRATASCRATCH/S_17_LYFT_DRIVER_WAGES.jpg)
 |18|[Order Details](https://platform.stratascratch.com/coding/9913-order-details?code_type=6)|Easy|[Output](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/STRATASCRATCH/S_18_ORDER_DETAILS.jpg)
 |19|[Popularity of Hack](https://platform.stratascratch.com/coding/10061-popularity-of-hack?code_type=6)|Easy|[Output](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/STRATASCRATCH/S_19_POPULARITY_OF_HACK.jpg)
+|20|[Salaries Differences](https://platform.stratascratch.com/coding/10308-salaries-differences?code_type=6)|Easy|[Output](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/STRATASCRATCH/S_20_SALARIES_DIFFERENCES.jpg)
