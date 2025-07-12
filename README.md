@@ -39,3 +39,4 @@ Below are my soluntions to the Pyspark Problems....
 |19|[Popularity of Hack](https://platform.stratascratch.com/coding/10061-popularity-of-hack?code_type=6)|Easy|[Output](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/STRATASCRATCH/S_19_POPULARITY_OF_HACK.jpg)
 |20|[Salaries Differences](https://platform.stratascratch.com/coding/10308-salaries-differences?code_type=6)|Easy|[Output](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/STRATASCRATCH/S_20_SALARIES_DIFFERENCES.jpg)
 |21|[Top 10 Songs 2010](https://platform.stratascratch.com/coding/9650-find-the-top-10-ranked-songs-in-2010?code_type=6)|Medium|[Output](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/STRATASCRATCH/S_21_TOP_10_SONGS_2010.jpg)
+|22|[Activity Rank](https://platform.stratascratch.com/coding/10351-activity-rank?code_type=6)|Medium|[Output](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/STRATASCRATCH/S_22_ACTIVITY_RANK.jpg)
