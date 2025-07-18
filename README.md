@@ -44,6 +44,7 @@ Below are my soluntions to the Pyspark Problems....
 |23|[Meta/Facebook Accounts](https://platform.stratascratch.com/coding/10296-facebook-accounts?code_type=6)|Medium|[Output](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/STRATASCRATCH/S_23_META_FACEBOOK_ACCOUNTS.jpg)
 |24|[Customers Revenue IN March](https://platform.stratascratch.com/coding/9782-customer-revenue-in-march?code_type=6)|Medium|[Output](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/STRATASCRATCH/S_24_CUSTOMER_REVENUE_IN_MARCH.jpg)
 |25|[Second Highest Salary](https://platform.stratascratch.com/coding?difficulties=2&is_freemium=1&code_type=6)|Medium|[Output](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/STRATASCRATCH/S_25_SECOND_HIGHEST_SALARY.jpg)
+|26|[Employee And Manager Salaries](https://platform.stratascratch.com/coding/9894-employee-and-manager-salaries?code_type=6)|Medium|[Output](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/STRATASCRATCH/S_26_EMPLOYEE_AND_MANAGER_SALARIES.jpg)
 
 
 
