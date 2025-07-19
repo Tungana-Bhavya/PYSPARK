@@ -3,9 +3,11 @@
 ------
 
 1. Pyspark CheatSheet
-2. Pyspark Problems
-3. Pyspark Dataframe Tranformations, Operations
-4. Pyspark Project
+2. Pyspark Beginner Core Dataframe Operations
+3. Pyspark Intermediate Operations
+4. Pyspark Expert Complex Transformations
+5. Pyspark Real World Problems
+6. Pyspark Project
 
 
 -------
@@ -50,7 +52,18 @@ Below are my soluntions to the Pyspark Problems....
 
 
 -------
-Pyspark Dataframe Tranformations
+Beginner level Core Operations 
 
-|ID| QUESTION       |FUNCTIONS USED|IMAGE|
-|--|------------------------ |-----|----:|
+|ID| QUESTION       |IMAGE|
+|--|----------------|----:|
+|1|How to load CSV File into DataFrame|[Output]()
+|2|How to select employees with salary greater than 80000|[Output]()
+|3|How to count employees in each department|[Output]()
+|4|Find the average salary per department|[Output]()
+|5|Filter employees hired after 2024|[Output]()
+|6|Find the employees by salary in descending order|[Output]()
+|7|How to Rename a column|[Output]()
+|8|How to Remove duplicate records|[Output]()
+|9|How to handle null values|[Output]()
+|10|How to add new column by showing salary in thousands|[Output]()
+
