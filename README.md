@@ -56,14 +56,15 @@ Beginner level Core Operations
 
 |ID| QUESTION       |IMAGE|
 |--|----------------|----:|
-|1|How to load CSV File into DataFrame|[Output]()
-|2|How to select employees with salary greater than 80000|[Output]()
-|3|How to count employees in each department|[Output]()
-|4|Find the average salary per department|[Output]()
-|5|Filter employees hired after 2024|[Output]()
-|6|Find the employees by salary in descending order|[Output]()
-|7|How to Rename a column|[Output]()
-|8|How to Remove duplicate records|[Output]()
-|9|How to handle null values|[Output]()
-|10|How to add new column by showing salary in thousands|[Output]()
+|1|How to load CSV File into DataFrame|[Output](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/OTHERS/K_1_CSV_FILE_LOADING.jpg)
+|2|How to print the employee schema|[Output](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/OTHERS/K_2_SCHEMA.jpg)
+|3|How to count number of rows and columns in employees data|[Output](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/OTHERS/K_3_ROWS_COLUMNS.jpg)
+|4|How to count employees in each department|[Output]()
+|5|Find the average salary per department|[Output]()
+|6|Filter employees hired after 2024|[Output]()
+|7|Find the employees by salary in descending order|[Output]()
+|8|How to Rename a column|[Output]()
+|9|How to Remove duplicate records|[Output]()
+|10|How to handle null values|[Output]()
+|11|How to add new column by showing salary in thousands|[Output]()
 
