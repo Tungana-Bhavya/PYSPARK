@@ -89,6 +89,17 @@ df.select('col1', 'col2') </br>
 <b>method 2:</b></br>
 df.select(col('column1'), col('column2'))</br>
 
+#### - How to select columns dynamically ?</br>
+- list of columns to select</br>
+columns = ["col1", "col2", "col3"]</br>
+- Dynamically selecting columns</br>
+df = df.select(*columns)
+
+#### - How to select all columns and drop unrequired ?</br>
+- selecting all columns except col_x and col_y </br>
+df = df.select("*").drop("col_x", "col_y")
+
+
 ### Filtering
 #### - How to filter data from dataset ?
 <b>case 1:</b></br>
