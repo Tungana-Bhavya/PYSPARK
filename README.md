@@ -3,11 +3,12 @@
 ------
 
 1. Pyspark CheatSheet
-2. Pyspark Beginner Core Dataframe Operations
-3. Pyspark Intermediate Operations
-4. Pyspark Expert Complex Transformations
-5. Pyspark Real World Problems
-6. Pyspark Project
+2. Beginner Core Dataframe Operations
+3. Intermediate Operations
+4. Expert Complex Transformations
+5. Stratascratch problems
+6. LeetcodeSQL50 problems
+7. Pyspark Project
 
 
 -------
@@ -51,7 +52,11 @@ Below are my soluntions to the Pyspark Problems....
 |28|[Host Popularity Rental Houses](https://platform.stratascratch.com/coding/9632-host-popularity-rental-prices?code_type=6)|Medium|[Output](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/STRATASCRATCH/S_28_HOST_POPULARITY_RENTAL_PRICES.jpg)
 |29|[No Order Customers](https://platform.stratascratch.com/coding/10142-no-order-customers?code_type=6)|Medium|[Output](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/STRATASCRATCH/S_29_NO_ORDER_CUSTOMERS.jpg)
 
-
+-------
+|ID| QUESTION       |IMAGE|
+|--|----------------|-----------:|
+|1|[Recyclable and Low Fat Products](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/LEETCODE_SQL50/L_PY_01_RECYCLABLE_AND_LOW_FAT_PRODUCTS_0.jpg)|[Page 1](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/LEETCODE_SQL50/L_PY_01_RECYCLABLE_AND_LOW_FAT_PRODUCTS_1.jpg),[Page 2](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/LEETCODE_SQL50/L_PY_01_RECYCLABLE_AND_LOW_FAT_PRODUCTS_2.jpg)
+|2|[Find Customer Reference](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/LEETCODE_SQL50/L_PY_02_FIND_CUSTOMER_REFERNCE_0.jpg)|[Page 1](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/LEETCODE_SQL50/L_PY_02_FIND_CUSTOMER_REFERNCE_1.jpg)[Page 2](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/LEETCODE_SQL50/L_PY_02_FIND_CUSTOMER_REFERNCE_2.jpg)
 -------
 Beginner level Core Operations 
 
