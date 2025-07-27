@@ -55,8 +55,8 @@ Below are my soluntions to the Pyspark Problems....
 -------
 |ID| QUESTION       |IMAGE|
 |--|----------------|-----------:|
-|1|[Recyclable and Low Fat Products](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/LEETCODE_SQL50/L_PY_01_RECYCLABLE_AND_LOW_FAT_PRODUCTS_0.jpg)|[Page 1](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/LEETCODE_SQL50/L_PY_01_RECYCLABLE_AND_LOW_FAT_PRODUCTS_1.jpg),[Page 2](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/LEETCODE_SQL50/L_PY_01_RECYCLABLE_AND_LOW_FAT_PRODUCTS_2.jpg)
-|2|[Find Customer Reference](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/LEETCODE_SQL50/L_PY_02_FIND_CUSTOMER_REFERNCE_0.jpg)|[Page 1](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/LEETCODE_SQL50/L_PY_02_FIND_CUSTOMER_REFERNCE_1.jpg)[Page 2](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/LEETCODE_SQL50/L_PY_02_FIND_CUSTOMER_REFERNCE_2.jpg)
+|1|[Recyclable and Low Fat Products](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/LEETCODE_SQL50/L_PY_01_RECYCLABLE_AND_LOW_FAT_PRODUCTS_0.jpg)|[Page 1](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/LEETCODE_SQL50/L_PY_01_RECYCLABLE_AND_LOW_FAT_PRODUCTS_1.jpg) , [Page 2](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/LEETCODE_SQL50/L_PY_01_RECYCLABLE_AND_LOW_FAT_PRODUCTS_2.jpg)
+|2|[Find Customer Reference](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/LEETCODE_SQL50/L_PY_02_FIND_CUSTOMER_REFERNCE_0.jpg)|[Page 1](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/LEETCODE_SQL50/L_PY_02_FIND_CUSTOMER_REFERNCE_1.jpg) , [Page 2](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/LEETCODE_SQL50/L_PY_02_FIND_CUSTOMER_REFERNCE_2.jpg)
 -------
 Beginner level Core Operations 
 
