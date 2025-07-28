@@ -53,10 +53,11 @@ Below are my soluntions to the Pyspark Problems....
 |29|[No Order Customers](https://platform.stratascratch.com/coding/10142-no-order-customers?code_type=6)|Medium|[Output](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/STRATASCRATCH/S_29_NO_ORDER_CUSTOMERS.jpg)
 
 -------
-|ID| QUESTION       |IMAGE|
-|--|----------------|-----------:|
-|1|[Recyclable and Low Fat Products](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/LEETCODE_SQL50/L_PY_01_RECYCLABLE_AND_LOW_FAT_PRODUCTS_0.jpg)|[Page 1](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/LEETCODE_SQL50/L_PY_01_RECYCLABLE_AND_LOW_FAT_PRODUCTS_1.jpg) , [Page 2](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/LEETCODE_SQL50/L_PY_01_RECYCLABLE_AND_LOW_FAT_PRODUCTS_2.jpg)
-|2|[Find Customer Reference](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/LEETCODE_SQL50/L_PY_02_FIND_CUSTOMER_REFERNCE_0.jpg)|[Page 1](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/LEETCODE_SQL50/L_PY_02_FIND_CUSTOMER_REFERNCE_1.jpg) , [Page 2](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/LEETCODE_SQL50/L_PY_02_FIND_CUSTOMER_REFERNCE_2.jpg)
+|ID| QUESTION      | CODE|IMAGE|
+|--|----------------|-----|------:|
+|1|[Recyclable and Low Fat Products](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/LEETCODE_SQL50/L_PY_01_RECYCLABLE_AND_LOW_FAT_PRODUCTS_0.jpg)|[Code](https://www.kaggle.com/code/tunganabhavya/l-py-01-recyclable-low-fat-product)|[Page 1](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/LEETCODE_SQL50/L_PY_01_RECYCLABLE_AND_LOW_FAT_PRODUCTS_1.jpg) , [Page 2](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/LEETCODE_SQL50/L_PY_01_RECYCLABLE_AND_LOW_FAT_PRODUCTS_2.jpg)
+|2|[Find Customer Reference](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/LEETCODE_SQL50/L_PY_02_FIND_CUSTOMER_REFERNCE_0.jpg)|[Code](https://www.kaggle.com/code/tunganabhavya/l-py-02-find-customer-refernce)|[Page 1](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/LEETCODE_SQL50/L_PY_02_FIND_CUSTOMER_REFERNCE_1.jpg) , [Page 2](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/LEETCODE_SQL50/L_PY_02_FIND_CUSTOMER_REFERNCE_2.jpg)
+|3|[Big Countries](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/LEETCODE_SQL50/L_PY_03_BIG_COUNTRIES_0.jpg)|[Code](https://www.kaggle.com/code/tunganabhavya/l-py-03-big-countries)|[Page 1](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/LEETCODE_SQL50/L_PY_01_RECYCLABLE_AND_LOW_FAT_PRODUCTS_1.jpg) , [Page 2](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/LEETCODE_SQL50/L_PY_01_RECYCLABLE_AND_LOW_FAT_PRODUCTS_2.jpg)
 -------
 Beginner level Core Operations 
 
