@@ -1,1 +1,92 @@
 
+# import spark session
+from pyspark.sql import SparkSession
+import pyspark.sql.functions as f
+
+# create spark session
+spark = SparkSession.builder.appName("Date_Functions").getOrCreate()
+
+# creating dataframe
+emp_data = [
+    ("E01", "Alpha",  "2025-01-15"),
+    ("E02", "Mike",    "2019-06-30"),
+    ("E03", "Charlie","2023-12-01"),
+    ("E04", "Bravo",  "2025-08-01"),
+    ("E05", "Juliet",   "2022-03-20")
+]
+emp_cols = ["emp_id", "emp_name", "emp_joining"]
+employee_df = spark.createDataFrame(emp_data, emp_cols)
+
+# date conversions
+from pyspark.sql import functions as f
+
+df = employee_df \
+    .withColumn("joining_date", f.to_date("emp_joining", "yyyy-MM-dd")) \
+    .withColumn("joining_timestamp", f.to_timestamp("emp_joining", "yyyy-MM-dd")) \
+    .withColumn("formatted_joining", f.date_format("joining_date", "dd-MMM-yyyy")) \
+    .withColumn("joining_unix", f.unix_timestamp("joining_date")) \
+    .withColumn("readable_joining", f.from_unixtime("joining_unix", "yyyy-MM-dd"))
+
+df.select("emp_id", "emp_name", "joining_date", "emp_joining", "joining_timestamp",
+         "formatted_joining", "joining_unix", "readable_joining").toPandas()
+
+# Data Transformations
+df = employee_df \
+.withColumn("joining_date", f.to_date("emp_joining", "yyyy-MM-dd")) \
+.withColumn("joining_year", f.year("joining_date")) \
+.withColumn("joining_month", f.month("joining_date")) \
+.withColumn("joining_day", f.dayofmonth("joining_date")) \
+.withColumn("joining_quarter", f.quarter("joining_date")) \
+.withColumn("week_of_year", f.weekofyear("joining_date")) \
+.withColumn("day_of_week", f.dayofweek("joining_date")) \
+.withColumn("day_of_year", f.dayofyear("joining_date")) \
+.withColumn("first_of_month", f.trunc("joining_date", "MM")) \
+.withColumn("first_of_year", f.trunc("joining_date", "YYYY")) \
+.withColumn("last_day_of_month", f.last_day("joining_date"))
+
+df.select("emp_id", "emp_name", "joining_date", "joining_year", "joining_month",
+          "joining_day", "joining_quarter", "week_of_year", "last_day_of_month").toPandas()
+
+df = employee_df \
+.withColumn("joining_date", f.to_date("emp_joining", "yyyy-MM-dd")) \
+.withColumn("current_date", f.current_date()) \
+.withColumn("add_60_days", f.date_add("joining_date", 60)) \
+.withColumn("sub_30_days", f.date_sub("joining_date", 30)) \
+.withColumn("add_3_months", f.add_months("joining_date", 3)) \
+.withColumn("is_future_date", f.col("joining_date") > f.current_date())
+
+df.select(
+    "emp_id", "emp_name", "joining_date", "current_date",
+    "add_60_days", "sub_30_days", "add_3_months", "is_future_date"
+).toPandas()
+
+df = employee_df \
+    .withColumn("joining_date", f.to_date("emp_joining", "yyyy-MM-dd")) \
+    .withColumn("days_since_joining", f.datediff(f.current_date(), "joining_date")) \
+    .withColumn("days_since_joining_next", f.col("days_since_joining") + 1) \
+    .withColumn("total_months_since_joining", f.months_between(f.current_date(), "joining_date")) \
+    .withColumn("full_months", f.floor(f.col("total_months_since_joining")).cast("int")) \
+    .withColumn("rem_days", ((f.col("total_months_since_joining") - f.floor(f.col("total_months_since_joining"))) * 30).cast("int")) \
+    .withColumn("full_years", f.floor(f.col("total_months_since_joining") / 12).cast("int")) \
+    .withColumn("months_remainder", (f.col("total_months_since_joining") % 12).cast("int")) \
+    .withColumn(
+        "time_since_joining",
+        f.when(
+            f.col("total_months_since_joining") < 12,
+            f.concat(
+                f.col("full_months").cast("string"), f.lit(" months "),
+                f.col("rem_days").cast("string"), f.lit(" days")
+            )
+        ).otherwise(
+            f.concat(
+                f.col("full_years").cast("string"), f.lit(" years "),
+                f.col("months_remainder").cast("string"), f.lit(" months")
+            )
+        )
+    )
+
+df.select(
+    "emp_id", "joining_date", "current_date","days_since_joining", "days_since_joining_next",
+    "total_months_since_joining", "full_months", "rem_days",
+    "full_years", "months_remainder", "time_since_joining"
+).toPandas()
