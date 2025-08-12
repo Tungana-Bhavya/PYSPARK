@@ -8,7 +8,7 @@
 4. Expert Complex Transformations
 5. Stratascratch problems
 6. LeetcodeSQL50 problems
-7. Pyspark Project
+
 
 
 -------
@@ -73,6 +73,7 @@ Below are my soluntions to the Pyspark Problems....
 |13|[Managers With Atleast Five Direct Reports](https://leetcode.com/problems/managers-with-at-least-5-direct-reports/?envType=study-plan-v2&envId=top-sql-50)|Easy|[Code](https://www.kaggle.com/code/tunganabhavya/l-py-13-managers-with-atleaset-five-direct-reports/edit)|[Page 1](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/LEETCODE_SQL50/L_PY_13_MANAGERS_WITH_ATLEAST_FIVE_DIRECT_REPORTS_0.jpg) , [Page 2](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/LEETCODE_SQL50/L_PY_13_MANAGERS_WITH_ATLEAST_FIVE_DIRECT_REPORTS_1.jpg)
 |14|[Confirmation Rate](https://leetcode.com/problems/confirmation-rate/description/)|Medium|[Code](https://www.kaggle.com/code/tunganabhavya/l-py-14-confirmation-rate/edit)|[Page 1](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/LEETCODE_SQL50/L_PY_14_CONFIRMATION_RATE.jpg) , [Page 2](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/LEETCODE_SQL50/L_PY_14_CONFIRMATION_RATE_1.jpg) , [Page 3](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/LEETCODE_SQL50/L_PY_14_CONFIRMATION_RATE_2.jpg)
 |15|[Not Boring Movies](https://leetcode.com/problems/not-boring-movies/description/?envType=study-plan-v2&envId=top-sql-50)|Easy|[Code](https://www.kaggle.com/code/tunganabhavya/l-py-15-not-boring-movies)|[Page 1](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/LEETCODE_SQL50/L_PY_15_NOT_BORING_MOVIES_1.jpg) , [Page 2](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/LEETCODE_SQL50/L_PY_15_NOT_BORING_MOVIES_2.jpg)
+|16|[Project Employees I](https://leetcode.com/problems/project-employees-i/?envType=study-plan-v2&envId=top-sql-50)|Easy|[Code](https://www.kaggle.com/code/tunganabhavya/l-py-16-project-employee-i/edit)|[Page 1](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/LEETCODE_SQL50/L_PY_16_PROJECT_EMPLOYEE_I_0.jpg) , [Page 2](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/LEETCODE_SQL50/L_PY_16_PROJECT_EMPLOYEE_I_1.jpg) , [Page 3](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/LEETCODE_SQL50/L_PY_16_PROJECT_EMPLOYEE_I_2.jpg)
 
 
 
