@@ -51,6 +51,7 @@ Below are my soluntions to the Pyspark Problems....
 |27|[Flags Per Video](https://platform.stratascratch.com/coding/2102-flags-per-video?code_type=6)|Medium|[Output](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/STRATASCRATCH/S_27_FLAGS_PER_VIDEO.jpg)
 |28|[Host Popularity Rental Houses](https://platform.stratascratch.com/coding/9632-host-popularity-rental-prices?code_type=6)|Medium|[Output](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/STRATASCRATCH/S_28_HOST_POPULARITY_RENTAL_PRICES.jpg)
 |29|[No Order Customers](https://platform.stratascratch.com/coding/10142-no-order-customers?code_type=6)|Medium|[Output](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/STRATASCRATCH/S_29_NO_ORDER_CUSTOMERS.jpg)
+|30|[Find Students at Median Writing](https://platform.stratascratch.com/coding/9610-find-students-with-a-median-writing-score?code_type=6)|Medium|[Output](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/STRATASCRATCH/S_30_FIND_STUDENTS_AT_MEDIAN_WRITING.jpg)
 
 -------
 Below are my soluntions to the Pyspark Problems....
