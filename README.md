@@ -115,6 +115,5 @@ Beginner level Core Operations
 |7|Find the employees by salary in descending order|[Output]()
 |8|How to Rename a column|[Output](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/OTHERS/K_5_RENAME.jpg)
 |9|How to Remove duplicate records|[Output](https://github.com/Tungana-Bhavya/PYSPARK/blob/main/FILES/PROBLEMS/OTHERS/K_6_DUPLICATE_RECORDS.jpg)
-|10|How to handle null values|[Output]()
-|11|How to add new column by showing salary in thousands|[Output]()
+
 
